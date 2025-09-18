@@ -82,7 +82,7 @@ The first thing we'll want to do is figure out what selector will allow us to
 grab each project as a whole. Open up `fixtures/kickstarter.html` by typing:
 
 ```console
-$ open fixtures/kickstarter.html
+open fixtures/kickstarter.html
 ```
 
 in the terminal, or by right clicking on the file and selecting "open in browser".
@@ -162,10 +162,10 @@ escape the scrolling and go back to entering code in Pry by hitting "q".
 `variable` name to the return value of whatever was executed above. For example:
 
 ```console
-$ pry > 1 + 1
+pry > 1 + 1
   => 2
-$ pry > two = _
-$ pry > two
+pry > two = _
+pry > two
   => 2
 ```
 
@@ -273,7 +273,7 @@ the location that you should have figured out on your own), is:
 # percent_funded: project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
 ```
 
-### Let's Scrape!
+### Let's Scrape
 
 Now, it's just a matter of putting together the data we can grab with Nokogiri
 with our knowledge of data iteration in Ruby.
